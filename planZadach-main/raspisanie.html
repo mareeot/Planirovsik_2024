@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Канбан</title>
+</head>
+<body>
+    <div id="all__modale">
+    
+    </div>
+    
+    <header>
+        
+        <input class="head__serch" type="text" placeholder="Поиск">
+        <div class="login">
+            <img class="ava" src="https://muzolenta.ru/wp-content/uploads/2018/07/VJpFJi_ZomA-959x600.jpg" alt="">
+            <p>Пылаев Дмитрий</p>
+            <img id="image" src="https://cdn-icons-png.flaticon.com/512/77/77682.png">
+            <img class="out" src="img/header/log_in_icon_128822.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="left__content">
+                <div class="d7">
+                    <form>
+                      <input type="text" placeholder="Искать здесь...">
+                      <button type="submit"></button>
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Глобальные планы</a></li>
+                        <li><a href="#">Контент-план</a></li>
+                        <li><a href="#">Общие задачи</a></li>
+                        <li><a href="#">Ежедневник</a></li>
+                        <li id="listBtn"><a href="#">Задачи</a></li>
+                    </ul>
+                </nav>
+                <div id="modal__chat">
+                    <div class="app__chat">
+                      <img id="razwer__chat" src="https://static.tildacdn.com/tild3933-6439-4266-a465-343239646462/970px-Simpleicons_In.png" alt="">
+                      <h2>Чат</h2>
+                    </div>
+                    <div class="down__chat">
+                      <img id="vlojenie" src="https://cdn1.iconfinder.com/data/icons/office-set-3/512/7-1024.png" alt="">
+                      <img id="amodji" src="https://www.pngarts.com/files/10/Whatsapp-Emoji-PNG-Transparent-Image.png" alt="">
+                      <input type="text">
+                      <img id="send__mas" src="https://www.pospratik.com/img/icons/sms.svg" alt="">
+                    </div>
+                  </div>
+                  <div id="modal__zadach">
+                    <form action="">
+                      <img id="ckrestick" src="https://vectorified.com/images/checkmark-icon-png-40.jpg" alt="">
+                      <h2>Создание задачи</h2>
+                      <input class="nazv__zad" type="text" placeholder="Название задачи...">
+                      <button id="xz__vh">Создать</button>
+                    </form>
+                  </div>
+                
+                
+            </div>
+            <div id="modal__zadach">
+                <img id="crest__zad" src="https://avatanplus.com/files/resources/original/59032f6a1d07b15bb4713687.png" alt="">
+                <form id="taskForm">
+                  <h2>Создание задачи</h2>
+                  <br>
+                  <label for="assignee">Исполнитель:</label>
+                  <input type="text" id="assignee" name="assignee" required>
+                  <br>
+                  <br>
+                  <label for="assigner">Постановщик:</label>
+                  <input type="text" id="assigner" name="assigner" required>
+                  <br>
+                  <br>
+                  <label for="assigner">Название:</label>
+                  <input type="text" id="assigner" name="assigner" required>
+                  <br>
+                  <br>
+                  <label for="assigner">Дата начала:</label>
+                  <input type="date" id="assigner" name="assigner" required>
+                  <br>
+                  <br>
+                  <label for="assigner">Дата завершения:</label>
+                  <input type="date" id="assigner" name="assigner" required>
+                  <br>
+                  <br>
+                  <input class="cr__za" type="submit" value="Создать задачу">
+                </form>
+              </div>
+        <div class="kanban">
+            <div class="board">
+                <div id="todo" class="column">
+                    <h3>Сделать</h3>
+                </div>
+                <div id="in-progress" class="column">
+                    <h3>В работе</h3>
+                </div>
+                <div id="done" class="column">
+                    <h3>Готово</h3>
+                </div>
+            </div>
+            
+            <button id="add-task">Добавить задачу</button>
+            
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <label for="task-name">Название:</label>
+                    <input type="text" id="task-name"><br>
+                    <label for="task-description">Описание:</label>
+                    <textarea id="task-description"></textarea><br>
+                    <label for="column-select">Выбор колонки:</label>
+                    <select id="column-select">
+                        <option value="todo">Сделать</option>
+                        <option value="in-progress">В работе</option>
+                        <option value="done">Готово</option>
+                    </select><br>
+                    <button id="save-task">Сохранить</button>
+                </div>
+            </div>
+        </div>
+        <img id="vipad_list" src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/06_menu_bullet-1024.png" alt="">
+        <div class="drugie__tabl">
+            <a href="index.html"><button>Главная</button></a>
+            <a href="tablica.html"><button>Таблица</button></a>
+            <a href="raspisanie.html"><button>Канбан</button></a>
+            <a href="table.html"><button>Диаграмма Ганта</button></a>
+          </div>
+    </div>
+          
+    </main>
+
+    <script src="raspis.js"></script>
+</body>
+</html>

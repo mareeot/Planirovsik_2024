@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="table.css">
+    <title>Диаграмма Ганта</title>
+</head>
+<body>
+  <header>
+    <input class="head__serch" type="text" placeholder="Поиск">
+    <div class="login">
+        <img class="ava" src="https://muzolenta.ru/wp-content/uploads/2018/07/VJpFJi_ZomA-959x600.jpg" alt="">
+        <p>Пылаев Дмитрий</p>
+        <img id="image" src="https://cdn-icons-png.flaticon.com/512/77/77682.png">
+        <img class="out" src="img/header/log_in_icon_128822.png" alt="">
+    </div>
+</header>
+    <main>
+      <div class="container">
+        <div class="left__content">
+          <div class="d7">
+              <form>
+                <input type="text" placeholder="Искать здесь...">
+                <button type="submit"></button>
+              </form>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="#">Глобальные планы</a></li>
+                  <li><a href="#">Контент-план</a></li>
+                  <li><a href="#">Общие задачи</a></li>
+                  <li><a href="#">Ежедневник</a></li>
+                  <li id="listBtn"><a href="#">Задачи</a></li>
+              </ul>
+          </nav>
+          
+        </div>
+        <div id="modal__zadach">
+          <img id="crest__zad" src="https://avatanplus.com/files/resources/original/59032f6a1d07b15bb4713687.png" alt="">
+          <form id="taskForm">
+            <h2>Создание задачи</h2>
+            <br>
+            <label for="assignee">Исполнитель:</label>
+            <input type="text" id="assignee" name="assignee" required>
+            <br>
+            <br>
+            <label for="assigner">Постановщик:</label>
+            <input type="text" id="assigner" name="assigner" required>
+            <br>
+            <br>
+            <label for="assigner">Название:</label>
+            <input type="text" id="assigner" name="assigner" required>
+            <br>
+            <br>
+            <label for="assigner">Дата начала:</label>
+            <input type="date" id="assigner" name="assigner" required>
+            <br>
+            <br>
+            <label for="assigner">Дата завершения:</label>
+            <input type="date" id="assigner" name="assigner" required>
+            <br>
+            <br>
+            <label for="assigner">Дата завершения:</label>
+            <input type="date" id="assigner" name="assigner" required>
+            <br>
+            <br>
+            <input class="cr__za" type="submit" value="Создать задачу">
+          </form>
+        </div>
+        <div class="alle_tible">
+          <div>
+              <input type="text" id="taskName" placeholder="Название задачи">
+              <select id="startDay">
+                  <option value="0">Пн</option>
+                  <option value="1">Вт</option>
+                  <option value="2">Ср</option>
+                  <option value="3">Чт</option>
+                  <option value="4">Пт</option>
+              </select>
+              <input type="number" id="duration" min="1" max="5" placeholder="Дней (1-5)" />
+              <button onclick="addTask()">Добавить задачу</button>
+          </div>
+          <table id="taskTable">
+              <thead>
+                  <tr>
+                      <th>Задачи</th>
+                      <th>Пн</th>
+                      <th>Вт</th>
+                      <th>Ср</th>
+                      <th>Чт</th>
+                      <th>Пт</th>
+                  </tr>
+              </thead>
+              <tbody id="taskBody">
+                  <!-- Задачи будут добавляться сюда -->
+              </tbody>
+          </table>
+        </div>
+      </div>
+  
+  </div>
+  <div class="drugie__tabl">
+    <a href="index.html"><button>Главная</button></a>
+    <a href="tablica.html"><button>Таблица</button></a>
+    <a href="raspisanie.html"><button>Канбан</button></a>
+    <a href="table.html"><button>Диаграмма Ганта</button></a>
+  </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="table.js"></script>
+</body>
+</html>

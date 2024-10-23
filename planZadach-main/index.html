@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Планировщик задач</title>
+</head>
+<body>
+  <div id="all__modale">
+    
+  </div>
+  <div class="ava2">
+    <img src="https://cdn-icons-png.flaticon.com/512/3843/3843580.png" alt="Avatar" id="avatarrr2">
+  </div>
+    <header>
+        <input class="head__serch" type="text" placeholder="Поиск">
+        <div class="login">
+            <img class="ava" src="https://masterpiecer-images.s3.yandex.net/7d2dc8c65f6c11eea5286a0259d7362a:upscaled" alt="">
+            <p>Виктория Марченко</p>
+            <img id="image" src="https://cdn-icons-png.flaticon.com/512/77/77682.png">
+            <img class="out" src="img/header/log_in_icon_128822.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="left__content">
+                <div class="d7">
+                    <form>
+                      <input type="text" placeholder="Искать здесь...">
+                      <button type="submit"></button>
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Глобальные планы</a></li>
+                        <li><a href="#">Контент-план</a></li>
+                        <li><a href="#">Общие задачи</a></li>
+                        <li><a href="#">Ежедневник</a></li>
+                        <li id="listBtn"><a href="#">Задачи</a></li>
+                        <li id="napominanie"><a href="#">Напоминания</a></li>
+                    </ul>
+                </nav>
+                <div id="modal__napom">
+                  <img id="svern__napom" src="https://cdn-icons-png.flaticon.com/512/17/17047.png" alt="">
+                  <p class="bac_na">Новое напоминание</p>
+                  <h2>напоминание</h2>
+                  <div class="duble__napom">
+                    <p id="fir__zap">Запланированные</p>
+                    <p class="seccs" id="sec__zap">Отправленные</p>
+                  </div>
+                  <div class="devka__text">
+                    <img class="devka" src="https://cdn-icons-png.freepik.com/512/1000/1000366.png" alt="">
+                    <p>Пока у вас нет запланированных напоминаний</p>
+                  </div>
+                  <button class="but__devka">Новое напоминание</button>
+                </div>
+                <div id="modal__chat">
+                  <div class="left__chat">
+                    <img id="krestt" src="https://cdn-icons-png.flaticon.com/512/17/17047.png" alt="">
+                    <img id="krestt2" src="https://cdn-icons-png.flaticon.com/512/17/17047.png" alt="">
+                    <div class="uppe__chat">
+                      <div class="block__chat1">
+                        <p>B&D</p>
+                        <p>Обзвон компаний</p>
+                      </div>
+                      <div class="but__chat">
+                        <button>Выполнить</button>
+                        <button>Завершить</button>
+                      </div>
+                      <div class="inWork"><div class="kruzochek"></div>В работе</div>
+                    </div>
+                    <div class="niz__chat">
+                      <div class="chat">
+                        <div class="chat-window">
+                          <div class="message-container" id="message-container">
+                            <div class="message">
+                              <div class="avatar">
+                                <img src="https://masterpiecer-images.s3.yandex.net/7d2dc8c65f6c11eea5286a0259d7362a:upscaled" alt="Avatar">
+                              </div>
+                              <div class="message-content">
+                                <div class="message-info">
+                                  <span class="sender">Виктория Марченко</span>
+                                  <span class="timestamp">20.12.2023, 12:56:30</span>
+                                </div>
+                                <span class="message-text">Обзвон комппаний!</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="chat-input">
+                          <img class="files" src="https://cdn-icons-png.flaticon.com/512/266/266074.png" alt="">
+                          <input type="text" id="message-input" placeholder="Введите сообщение">
+                          <button id="send-button">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="line__chat"></div>
+                  <div class="right__chat">
+                    <h2>Детали</h2>
+                    <input type="text" name="" id="" placeholder="Фильтр по полю">
+                    <div class="blockk">
+                      <p>Номер</p>
+                      <p>908</p>
+                    </div>
+                    <div class="blockk">
+                      <p>Email задачи</p>
+                      <p>task+908@gmail.com</p>
+                    </div>
+                    <div class="blockk">
+                      <p>Постановщик</p>
+                      <p>Виктория Марченко</p>
+                    </div>
+                    <div class="blockk">
+                      <p>Проект</p>
+                      <p>B&D</p>
+                    </div>
+                    <div class="blockk">
+                    <p>Исполнители</p>
+                    <p>Виктория Марченко</p>
+                  </div>
+                  <div class="blockk">
+                    <p>Дата начала</p>
+                    <p>Не указана</p>
+                  </div>
+                  <div class="blockk">
+                    <p>Дата завершения</p>
+                    <p>Не указана</p>
+                  </div>
+                  </div>
+                </div>
+                  <div id="modal__zadach">
+                    <img id="crest__zad" src="https://cdn-icons-png.flaticon.com/512/17/17047.png" alt="">
+                    <form id="taskForm">
+                      <h2>Создание задачи</h2>
+                      <br>
+                      <div class="up_task">
+                        <label for="assignee">Исполнитель:</label>
+                        <input type="text" id="assignee" name="assignee" required>
+                        <br>
+                        <br>
+                        <label for="assigner">Постановщик:</label>
+                        <input type="text" id="assigner" name="assigner" required>
+                        <br>
+                        <br>
+                        <label for="assigner">Название:</label>
+                        <input type="text" id="assigner" name="assigner" required>
+                        <br>
+                        <br>
+                        <label for="assigner">Описание:</label>
+                        <input type="text" id="assigner" name="assigner" required>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="down_task">
+                        <label for="assigner">Дата начала:</label>
+                        <input type="date" id="assigner" name="assigner" required>
+                        <br>
+                        <br>
+                        <label for="assigner">Дата завершения:</label>
+                        <input type="date" id="assigner" name="assigner" required>
+                        <br>
+                        <br>
+                        <label for="assigner">Цвет:</label>
+                        <input type="color" id="color" name="assigner" required>
+                        <br>
+                        <br>
+                      </div>
+                      <input class="cr__za" type="submit" value="Создать задачу">
+                    </form>
+                  </div>
+                
+                
+            </div>
+            <div id="right__content1">
+              <div class="upp_panel">
+                <h2>Фильтры: </h2>
+                <div class="filter-container">
+                  <input type="text" id="taskFilter" placeholder="Введите название задачи...">
+                  <label for="assigneeFilter">Исполнитель:</label>
+                  <select id="assigneeFilter">
+                      <option value="">Все</option>
+                      <option value="Алексей">Алексей</option>
+                      <option value="Мария">Мария</option>
+                      <option value="Иван">Иван</option>
+                  </select>
+                  <label for="startTimeFilter">Время начала:</label>
+                  <input type="datetime-local" id="startTimeFilter">
+              </div>
+              </div>
+              <div class="calendar">
+                <div class="timeline">
+                  <div class="spacer"></div>
+                  <div class="time-marker">09:00</div>
+                  <div class="time-marker">10:00</div>
+                  <div class="time-marker">11:00</div>
+                  <div class="time-marker">12:00</div>
+                  <div class="time-marker">13:00</div>
+                  <div class="time-marker">14:00</div>
+                  <div class="time-marker">15:00</div>
+                  <div class="time-marker">16:00</div>
+                  <div class="time-marker">17:00</div>
+                  <div class="time-marker">18:00</div>
+                </div>
+                <div class="days">
+                  <div class="day mon">
+                    <div class="date">
+                      <p class="date-num"></p>
+                      <p class="date-day">Пн</p>
+                    </div>
+                    <div  class="events">
+                      <div class="task" id="bal1" data-name="Задача 1" data-assignee="Алексей" data-start-time="2023-11-01T10:00" data-end-time="2023-11-01T12:00">
+                        <strong>Название:</strong> Задача 1<br>
+                        <strong>Исполнитель:</strong> Алексей<br>
+                        <strong>Время начала:</strong> 2023-11-01 10:00<br>
+                        <strong>Время окончания:</strong> 2023-11-01 13:00
+                    </div>
+                    </div>
+                  </div>
+                  <div class="day tues">
+                    <div class="date">
+                      <p class="date-num"></p>
+                      <p class="date-day">Вт</p>
+                    </div>
+                    <div class="events">
+                      <div class="task" id="bal2" data-name="Задача 2" data-assignee="Мария" data-start-time="2023-10-15T12:00" data-end-time="2023-10-15T14:00">
+                        <strong>Название:</strong> Задача 2<br>
+                        <strong>Исполнитель:</strong> Мария<br>
+                        <strong>Время начала:</strong> 2023-10-15 9:00<br>
+                        <strong>Время окончания:</strong> 2023-10-15 12:00
+                    </div>
+                    </div>
+                  </div>
+                  <div class="day wed">
+                    <div class="date">
+                      <p class="date-num"></p>
+                      <p class="date-day">Ср</p>
+                    </div>
+                    <div class="events">
+                      <div class="task" id="bal3" data-name="Задача 3" data-assignee="Иван" data-start-time="2023-10-20T09:00" data-end-time="2023-10-20T11:00">
+                        <strong>Название:</strong> Задача 3<br>
+                        <strong>Исполнитель:</strong> Иван<br>
+                        <strong>Время начала:</strong> 2023-10-20 14:00<br>
+                        <strong>Время окончания:</strong> 2023-10-20 17:00
+                    </div>
+                    </div>
+                  </div>
+                  <div class="day thurs">
+                    <div class="date">
+                      <p class="date-num"></p>
+                      <p class="date-day">Чт</p>
+                    </div>
+                    <div class="events">
+                      <div class="task" id="bal4" data-name="Задача 4" data-assignee="Алексей" data-start-time="2023-11-05T15:00" data-end-time="2023-11-05T16:30">
+                        <strong>Название:</strong> Задача 4<br>
+                        <strong>Исполнитель:</strong> Алексей<br>
+                        <strong>Время начала:</strong> 2023-11-05 09:00<br>
+                        <strong>Время окончания:</strong> 2023-11-05 12:00
+                    </div>
+                    </div>
+                  </div>
+                  <div class="day fri">
+                    <div class="date">
+                      <p class="date-num"></p>
+                      <p class="date-day">Пт</p>
+                    </div>
+                    <div class="events">
+                      <div class="task" id="bal5" data-name="Задача 5" data-assignee="Мария" data-start-time="2023-10-28T11:00" data-end-time="2023-10-28T13:00">
+                        <strong>Название:</strong> Задача 5<br>
+                        <strong>Исполнитель:</strong> Мария<br>
+                        <strong>Время начала:</strong> 2023-10-28 09:00<br>
+                        <strong>Время окончания:</strong> 2023-10-28 12:00
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img id="vipad_list" src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/06_menu_bullet-1024.png" alt="">
+              <div class="drugie__tabl">
+                <a href="index.html"><button>Главная</button></a>
+                <a href="tablica.html"><button>Таблица</button></a>
+                <a href="raspisanie.html"><button>Канбан</button></a>
+                <a href="table.html"><button>Диаграмма Ганта</button></a>
+              </div>
+      </div>
+  
+    </div>
+  </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
